@@ -22,6 +22,11 @@
 <link rel="icon" href="favicon-icon.png" type="image/png">
 <link rel="apple-touch-icon" href="favicon-icon.png">
 
+<link rel="preload" href="assets/fonts/poppins-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/poppins-700-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/work-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/work-sans-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -164,8 +169,8 @@
 
   .brand-logo{ display:block; margin:0 auto; height:auto; }
   .brand-logo-hero{ width:min(72vw, 300px); }
-  .brand-logo-menu{ width:min(60vw, 240px); }
-  .brand-logo-story{ width:min(52vw, 210px); margin-bottom:4px; }
+  .brand-logo-menu{ width:min(84vw, 360px); }
+  .brand-logo-story{ width:min(84vw, 360px); margin-bottom:4px; }
   .signature-img{ width:min(55vw, 220px); height:auto; display:block; margin:20px auto 0; }
 
   /* ---------- HERO ---------- */
@@ -249,7 +254,7 @@
 
   .diamond-divider{ display:flex; align-items:center; justify-content:center; gap:14px; margin:26px 0; }
   .diamond-divider .rule{ height:1px; width:56px; background:var(--line); }
-  .diamond-divider .gem{ width:11px; height:11px; background:var(--terracotta); transform:rotate(45deg); border-radius:2px; flex-shrink:0; }
+  .diamond-divider .gem{ width:22px; height:25px; background:url('diamond-icon.png') center/contain no-repeat; flex-shrink:0; }
 
   /* ---------- SECTION HEADERS ---------- */
   section{ margin:34px 0; scroll-margin-top:120px; }
@@ -331,6 +336,7 @@
   .home-photo{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(20,13,10,.22),rgba(20,13,10,.76)),url('mekan.jpeg') center/cover no-repeat;transform:scale(1.02)}
   .home-content{position:relative;z-index:2;min-height:100vh;padding:var(--home-logo-top) 24px var(--home-footer-bottom);display:flex;flex-direction:column;justify-content:space-between;text-align:center;max-width:760px;margin:auto}
   .home-content .brand-logo{filter:brightness(0) invert(1);width:min(68vw,330px)}
+  .home-diamond-divider .rule{background:rgba(255,255,255,.35)}
   .eyebrow{text-transform:uppercase;letter-spacing:3px;font-size:11px;font-weight:700;opacity:.85}
   .home-copy-spaced .eyebrow{margin-bottom:14px;font-family:var(--home-hero-font, 'Work Sans')}
   .home-copy-spaced{margin-top:var(--home-text-top)}
@@ -375,6 +381,7 @@
     body{padding-bottom:0}
     .home-content{padding-top:110px}
     .page-screen{padding-top:96px}
+    #screenMenu{padding-top:96px}
   }
 
   /* ---------- FOOTER ---------- */
@@ -473,6 +480,7 @@
   <div class="home-content">
     <div>
       <img class="brand-logo" src="logo-brand-only.png" alt="Keskin Ekşi Mayalı Pide" loading="eager" decoding="async" fetchpriority="high" width="799" height="340">
+      <div class="diamond-divider home-diamond-divider" style="margin:14px 0 0"><span class="rule"></span><span class="gem"></span><span class="rule"></span></div>
     </div>
     <div class="home-copy home-copy-spaced">
       <div class="eyebrow i18n" data-tr="Ekşi maya · taş fırın · Alaçatı" data-en="Sourdough · stone oven · Alaçatı">Ekşi maya · taş fırın · Alaçatı</div>
